@@ -1,0 +1,58 @@
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    grid-gap: 3em ;
+}
+
+/* reset padding box-setting en marge */
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+article {
+    margin-top: 0;
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    padding: 1em 1em 1em 1em;
+    font-size: 1.2em;
+    height: 400px;
+    overflow: auto;
+    transition-duration: .5s;
+}
+
+article ul, article ol {
+    padding-left: 1em;
+}
+
+h1 { 
+    grid-column: 1/-1;
+    font-size: 80px;
+}
+h2 {
+    font-family: 'Odibee Sans', cursive;
+    grid-column: 1/-1;
+    font-size: 50px;
+}
+
+section:hover article {
+    margin-top: -408px;
+    transition: .5s ease;
+}
+span {
+    float: right;
+}
+a {
+    text-decoration: none;
+}
